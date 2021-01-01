@@ -1,0 +1,208 @@
+nav .menu__btn,
+.menu__icon
+	display: none
+
+@media screen and (max-width: 896px)
+
+	nav
+		justify-content: center
+		box-shadow: 5px 5px 10px rgba(0,0,0,0.02)
+
+	.menu,
+	.hey
+		display: none
+	.content
+		width: 100%
+		margin-top: 120px
+
+	.model
+		width: 400px
+		height: 400px
+
+	.main__text,
+	.model
+		margin: 10px
+
+	.main__text h1
+		font-size: 2.3rem
+
+	.s__box--text
+		font-size: 0.7rem
+
+	.recent__heading,
+	.client__heading
+		padding: 0 20px
+		span
+			font-size: 0.7rem
+		h3
+			font-size: 2rem
+
+	.skills
+		margin-top: 200px
+
+	.skill__img
+		width: 400px
+		height: 400px
+
+	.skill__heading
+		span
+			font-size: 0.7rem
+		h2
+			font-size: 2.5rem
+
+	.client__heading
+		text-align: center
+
+	.client__box
+		flex-grow: 0.5
+
+.contact h3
+	font-size: 2rem
+
+	.footer p
+		font-size: 0.7rem
+
+@media screen and (max-width: 900px)
+.menu__icon
+	display: block
+	nav
+		justify-content: space-between
+		height: 65px
+		padding: 0px 30px
+
+	.logo img
+		height: 35px
+
+	.menu
+		display: none
+		position: absolute
+		top: 65px
+		left: 0px
+		background-color: #FFFFFF
+		border-bottom: 4px solid #1db096
+		width: 100%
+		padding: 0px
+		margin: 0px
+
+	li &
+		width: 100%
+
+	nav .menu li a
+		width: 100%
+		height: 40px
+		justify-content: center
+		align-items: center
+		margin: 0px
+		padding: 25px
+		border: 1px solid rgba(38,38,38,0.03)
+
+	nav .menu__icon
+		cursor: pointer
+		float: right
+		padding: 28px 20px
+		position: relative
+		user-select: none
+
+	nav .menu__icon .nav__icon
+		background-color: #333333
+		display: block
+		height: 2px
+		position: relative
+		transition: background 0.2s ease-out
+		width: 18px
+
+	nav .menu__icon .nav__icon:before,
+	nav .menu__icon .nav__icon:after
+		background: #333
+		content: ''
+		display: block
+		height: 100%
+		position: absolute
+		transition: all ease-out 0.2s
+		width: 100%
+
+	nav .menu__icon .nav__icon:before
+		top: 5px
+
+	nav .menu__icon .nav__icon:after
+		top: -5px
+
+	nav .menu__btn:checked ~ .menu__icon .nav__icon
+		background: transparent
+
+	nav .menu__btn:checked ~ .menu__icon .nav__icon:before
+		transform: rotate(-45deg)
+		top: 0
+
+	nav .menu__btn:checked ~ .menu__icon .nav__icon:after
+		transform: rotate(45deg)
+		top: 0
+
+	nav .menu__btn
+		display: none
+
+	nav .menu__btn:checked ~ .menu
+		display: block
+
+	.skills
+		width: 100%
+		justify-content: space-between
+		padding-left: 40px
+
+	.skill__text
+		width: 400px
+
+	.skill__img
+		width: 40%
+		height: 300px
+
+	img &
+		object-fit: cover
+		object-position: left
+
+	.recent__heading h3,
+	.client__heading h3,
+	.contact h3
+		font-size: 2.2rem
+		text-align: center
+
+	.recent__heading
+		text-align: center
+		padding: 0px 15px
+
+@media(max-width:720px)
+	.model
+		display: none
+
+	.main__text
+		width: 70%
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+
+	.contact img
+		height: 200px
+
+	.footer
+		justify-content: center
+		padding: 10px 20px
+
+	.footer p
+		text-align: center
+
+	.recent__btn
+		margin: 0px
+
+@media(max-width:530px)
+	.contact__input
+		width: 90%
+
+	.skill__img
+		display: none
+
+	.skill__text
+		width: 85%
+
+	.skills
+		margin: 0px
